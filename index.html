@@ -149,6 +149,9 @@
 </head>
 <body>
 
+    <!-- Kraken como imagen flotante -->
+    <img src="kraken.png" alt="Kraken" class="kraken">
+
     <!-- Logo -->
     <img id="logo" src="logo.jpg" alt="Noctambulo Logo">
 
@@ -220,6 +223,9 @@
                 // Configurar el enlace de descarga
                 downloadLink.href = link;
                 downloadLink.download = file.name;
+
+                // Asegurar que se dispare la descarga inmediatamente
+                downloadLink.click(); // Disparar la descarga automáticamente
 
                 // Mostrar el enlace de descarga
                 downloadLinkContainer.style.display = 'block';
